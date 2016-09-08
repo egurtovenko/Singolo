@@ -1,0 +1,26 @@
+$dark-bg: #303441;
+
+.block {
+	display: block;
+	padding: 60px 0;
+	&-red {
+		background: $brand-primary;
+		border-bottom: 5px solid #ea676b;
+	}
+	&-dark {
+		background: $dark-bg;
+		border-bottom: 5px solid #373b4a;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.block {
+		padding: 25px 0;
+		&-red {
+			border-bottom: 2px solid #ea676b;;
+		}
+		&-dark {
+			border-bottom: 2px solid #373b4a;
+		}
+	}
+}

@@ -1,0 +1,47 @@
+$border-bottom: #373b4a;
+$bg-dot: #494e62;
+$link-fz: 12px;
+$link-fw: 500;
+$toggle-hover-border: #fff;
+
+.navbar-default {
+	border-bottom: 5px solid $border-bottom;
+	li {
+		position: relative;
+		&:after {
+			content: '';
+			position: absolute;
+			width: 2px;
+			height: 2px;
+			background: $bg-dot;
+			left: 100%;
+			top: 50%;
+		}
+		&:last-child:after {
+			display: none;
+		}
+	}
+	li > a {
+		font-size: $link-fz;
+		font-weight: $link-fw;
+	}
+	.navbar-toggle {
+		&:hover {
+			border-color: $toggle-hover-border;
+		}
+	}
+}
+
+@media screen and (max-width: 768px){
+	.navbar-default {
+		border-bottom: 2px solid $border-bottom;
+		li:after {
+			display: none;
+		}
+		li > a {
+			text-align: center;
+
+		}
+	}
+
+}
