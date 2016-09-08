@@ -1,0 +1,17 @@
+{
+  "name": "Singolo",
+  "homepage": "https://github.com/egurtovenko/Singolo",
+  "authors": [
+    "egurtovenko <gurtovenko030984@gmail.com>"
+  ],
+  "description": "SingoloProject",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
