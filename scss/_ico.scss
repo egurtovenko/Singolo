@@ -1,0 +1,125 @@
+$icomoon-font-path: "../fonts" !default;
+
+$icon-bubble: "\e900";
+$icon-heart: "\e901";
+$icon-lamp: "\e902";
+$icon-pen: "\e903";
+$icon-phone: "\e904";
+$icon-star: "\e905";
+$icon-phone2: "\e942";
+$icon-mail: "\e945";
+$icon-location: "\e947";
+$icon-google-plus: "\ea8b";
+$icon-facebook: "\ea90";
+$icon-twitter: "\ea96";
+$icon-linkedin: "\eaca";
+
+@font-face {
+  font-family: 'icomoon';
+  src:  url('#{$icomoon-font-path}/icomoon.eot?sj4liy');
+  src:  url('#{$icomoon-font-path}/icomoon.eot?sj4liy#iefix') format('embedded-opentype'),
+    url('#{$icomoon-font-path}/icomoon.ttf?sj4liy') format('truetype'),
+    url('#{$icomoon-font-path}/icomoon.woff?sj4liy') format('woff'),
+    url('#{$icomoon-font-path}/icomoon.svg?sj4liy#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  font-size: 40px;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-bubble {
+  &:before {
+    content: $icon-bubble;
+    left: 5%;
+    top: 12%;
+    position: absolute;
+  }
+}
+.icon-heart {
+  &:before {
+    content: $icon-heart;
+    left: 4%;
+    top: 12%;
+    position: absolute;
+  }
+}
+.icon-lamp {
+  &:before {
+    content: $icon-lamp;
+    left: 7%;
+    top: 12%;
+    position: absolute;
+  }
+}
+.icon-pen {
+  &:before {
+    content: $icon-pen;
+    left: 5%;
+    top: 12%;
+    position: absolute;
+  }
+}
+.icon-phone {
+  &:before {
+    content: $icon-phone;
+    left: 7%;
+    top: 12%;
+    position: absolute;
+  }
+}
+.icon-star {
+  &:before {
+    content: $icon-star;
+    left: 5%;
+    top: 11%;
+    position: absolute;
+  }
+}
+.icon-phone2 {
+  &:before {
+    content: $icon-phone2;
+  }
+}
+.icon-mail {
+  &:before {
+    content: $icon-mail;
+  }
+}
+.icon-location {
+  &:before {
+    content: $icon-location;
+  }
+}
+.icon-google-plus {
+  &:before {
+    content: $icon-google-plus;
+  }
+}
+.icon-facebook {
+  &:before {
+    content: $icon-facebook;
+  }
+}
+.icon-twitter {
+  &:before {
+    content: $icon-twitter;
+  }
+}
+.icon-linkedin {
+  &:before {
+    content: $icon-linkedin;
+  }
+}
