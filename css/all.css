@@ -4908,44 +4908,26 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
 
 .icon-bubble:before {
   content: "";
-  left: 5%;
-  top: 12%;
-  position: absolute;
 }
 
 .icon-heart:before {
   content: "";
-  left: 4%;
-  top: 12%;
-  position: absolute;
 }
 
 .icon-lamp:before {
   content: "";
-  left: 7%;
-  top: 12%;
-  position: absolute;
 }
 
 .icon-pen:before {
   content: "";
-  left: 5%;
-  top: 12%;
-  position: absolute;
 }
 
 .icon-phone:before {
   content: "";
-  left: 7%;
-  top: 12%;
-  position: absolute;
 }
 
 .icon-star:before {
   content: "";
-  left: 4%;
-  top: 12%;
-  position: absolute;
 }
 
 .icon-phone2:before {
@@ -5004,29 +4986,31 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
 }
 
 .features {
-  padding-left: 100px;
   padding-bottom: 25px;
   position: relative;
 }
 
-.features:after {
-  content: '';
+.features-ico {
+  float: left;
   width: 60px;
   height: 60px;
   border-radius: 50%;
   border: 2px solid #767e9e;
-  left: 0;
-  top: 0;
-  position: absolute;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 20px;
 }
 
-.features-title {
+.features-ico .icon {
+  margin: auto;
+}
+
+.features-holder-title {
   font-weight: 700;
-  margin-top: 0;
 }
 
-.features-description {
-  font-weight: 400;
+.features-holder-description {
   font-size: 12px;
 }
 
@@ -5144,6 +5128,11 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
   padding-bottom: 20px;
 }
 
+.team img {
+  width: 100%;
+  height: auto;
+}
+
 .team-title {
   font-weight: 700;
 }
@@ -5154,11 +5143,29 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
   padding-bottom: 20px;
 }
 
-.team-social .circle {
+.team-social .social-link {
+  color: #767e9e;
   display: inline-block;
+  text-align: center;
+}
+
+.team-social .social-link:hover {
+  color: #eb5055;
+}
+
+.team-social .icon {
+  font-size: 16px;
+  margin: auto;
+}
+
+.team-social .circle {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   margin-right: 10px;
   width: 30px;
   height: 30px;
   border: 1px solid #767e9e;
   border-radius: 50%;
+  position: relative;
 }

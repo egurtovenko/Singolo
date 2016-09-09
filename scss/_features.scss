@@ -1,23 +1,24 @@
 .features {
-	padding-left: 100px;
 	padding-bottom: 25px;
 	position: relative;
-	&:after {
-		content: '';
+	&-ico {
+		float: left;
 		width: 60px;
 		height: 60px;
 		border-radius: 50%;
-		border: 2px solid $gray-base;
-		left: 0;
-		top: 0;
-		position: absolute;
+		border: 2px solid $text-color;
+		display: flex;
+		margin-right: 20px;
+		.icon {
+			margin: auto;
+		}
 	}
-	&-title {
-		font-weight: 700;
-		margin-top: 0;
-	}
-	&-description {
-		font-weight: 400;
-		font-size: $font-size-small;
+	&-holder {
+		&-title {
+			font-weight: 700;
+		}
+		&-description {
+			font-size: $font-size-small;
+		}
 	}
 }

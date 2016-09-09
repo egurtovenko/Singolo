@@ -1,4 +1,8 @@
 .team {
+	img {
+		width: 100%;
+		height: auto;
+	}
 	&-title {
 		font-weight: 700;
 	}
@@ -8,13 +12,26 @@
 		padding-bottom: 20px;
 	}
 	&-social {
-		.circle {
+		.social-link {
+			color: $text-color;
 			display: inline-block;
+			text-align: center;
+			&:hover {
+				color: $brand-primary;
+			}
+		}
+		.icon {
+			font-size: 16px;
+			margin: auto;
+		}
+		.circle {
+			display: flex;
 			margin-right: 10px;
 			width: 30px;
 			height: 30px;
 			border: 1px solid $text-color;
 			border-radius: 50%;
+			position: relative;
 		}
 	}
 }
