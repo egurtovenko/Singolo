@@ -4900,7 +4900,7 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
   font-variant: normal;
   text-transform: none;
   line-height: 1;
-  font-size: 40px;
+  font-size: 25px;
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -4992,8 +4992,8 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
 
 .features:after {
   content: '';
-  width: 75px;
-  height: 75px;
+  width: 60px;
+  height: 60px;
   border-radius: 50%;
   border: 2px solid #767e9e;
   left: 0;
@@ -5059,6 +5059,31 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
   border: 1px solid #666d89;
 }
 
-.pb {
-  padding-bottom: 30px;
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #eb5055;
+  opacity: 0.9;
+  z-index: 10;
+  visibility: hidden;
+}
+
+.card-holder {
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.card-holder:hover .overlay {
+  visibility: visible;
+  box-shadow: 0 0 15px 0 tomato;
+  transition: 0.5s;
+}
+
+@media screen and (max-width: 768px) {
+  .card-holder:hover .overlay {
+    visibility: hidden;
+  }
 }

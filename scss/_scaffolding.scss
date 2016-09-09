@@ -1,11 +1,30 @@
 $thumb-bg: #666d89;
 $thumb-border-color: $thumb-bg;
-$thumb-padding-bottom: 30px;
 
 .img-thumbnail {
 	background-color: $thumb-bg;
 	border: 1px solid $thumb-border-color;
 }
-.pb {
-	padding-bottom: $thumb-padding-bottom;
+
+.overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: $brand-primary;
+	opacity: 0.9;
+	z-index: 10;
+	visibility: hidden;
+		// &:before {
+		// 	content: 'VIEW';
+		// 	position: absolute;
+		// 	font-size: 14px;
+		// 	font-weight: 700;
+		// 	color: $thumb-bg;
+		// 	left: 50%;
+		// 	top: 50%;
+		// 	transform: translateY(-35%);
+		// 	visibility: hidden;
+		// }
 }

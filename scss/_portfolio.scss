@@ -1,0 +1,23 @@
+$thumb-margin-bottom: 30px;
+
+.card-holder {
+	margin-bottom: $thumb-margin-bottom;
+	position: relative;
+	&:hover {
+		.overlay {
+			visibility: visible;
+			box-shadow: 0 0 15px 0 tomato;
+			transition: 0.5s;
+		}
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.card-holder {
+		&:hover {
+			.overlay {
+				visibility: hidden;
+			}
+		}
+	}
+}
