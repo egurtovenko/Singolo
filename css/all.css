@@ -4871,7 +4871,7 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
 }
 
 .heading {
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 
 .heading-title {
@@ -4976,12 +4976,31 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
   content: "";
 }
 
+.carousel-off {
+  display: none;
+}
+
 .carousel .carousel-control.left {
   background-image: none;
 }
 
 .carousel .carousel-control.right {
   background-image: none;
+}
+
+@media screen and (max-width: 768px) {
+  .carousel {
+    display: none;
+  }
+  .carousel-off {
+    display: block;
+    font-weight: 700;
+  }
+  .carousel-off .carousel-title {
+    font-weight: 700;
+    font-family: 'Lato';
+    color: #f2f2f2;
+  }
 }
 
 .features {
@@ -5083,7 +5102,44 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
 }
 
 @media screen and (max-width: 768px) {
-  .card-holder:hover .overlay {
-    visibility: hidden;
+  .card-holder img {
+    width: 100%;
+    height: auto;
   }
+}
+
+.btn {
+  margin-right: 10px;
+  font-weight: 300;
+  display: inline-block;
+  text-align: center;
+  border: 1px solid transparent;
+  vertical-align: middle;
+  cursor: pointer;
+  white-space: nowrap;
+  border-radius: 4px;
+  font-size: 12px;
+  padding: 0 8px;
+}
+
+.btn-default {
+  background-color: transparent;
+  color: #767e9e;
+  border-color: #767e9e;
+}
+
+.btn-default:hover, .btn-default.active {
+  background: transparent;
+  border-color: #fff;
+  color: #fff;
+}
+
+.btn-small {
+  border-radius: 4px;
+  font-size: 12px;
+  padding: 0 8px;
+}
+
+.btn-holder {
+  padding-bottom: 20px;
 }

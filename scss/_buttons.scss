@@ -1,0 +1,64 @@
+$padding-small-y:					0;
+$padding-small-x:					8px;
+
+$btn-font-weight: 					300;
+$btn-border-width: 					1px;
+$btn-border-radius: 				4px;
+$btn-font-size: 					$font-size-small;
+$btn-padding-small-y: 				$padding-small-y;
+$btn-padding-small-x: 				$padding-small-x;
+$btn-default-bg: 					transparent;
+$btn-text-default: 					$text-color;
+$btn-border-default: 				$text-color;
+$btn-default-bg-hover:				transparent;
+$btn-default-border-hover:			#fff;
+$text-hover-color:					#fff;
+
+
+
+@mixin btn-variant ($background, $color, $border, $hover-color, $border-hover, $text-hover){
+	background-color: $background;
+	color: $color;
+	border-color: $border;
+		&:hover,
+		&.active {
+			background: $hover-color;
+			border-color: $border-hover;
+			color: $text-hover;
+		} 
+}
+@mixin btn-size ($border-radius, $font-size, $padding-y, $padding-x){
+	border-radius: $border-radius;
+	font-size: $font-size;
+	padding: $padding-y $padding-x;
+}
+
+//Button default
+
+.btn {
+	margin-right: 10px;
+	font-weight: $btn-font-weight;
+	display: inline-block;
+	text-align: center;
+	border: $btn-border-width solid transparent;
+	vertical-align: middle;
+	cursor: pointer;
+	white-space: nowrap;
+	@include btn-size ($btn-border-radius, $btn-font-size, $btn-padding-small-y, $btn-padding-small-x);
+}
+
+//Buttons color
+
+.btn-default {
+	@include btn-variant ($btn-default-bg, $btn-text-default, $btn-border-default, $btn-default-bg-hover, $btn-default-border-hover, $text-hover-color);
+}
+
+//Buttons size 
+
+.btn-small {
+	@include btn-size ($btn-border-radius, $font-size-small, $padding-small-y, $padding-small-x);
+}
+
+.btn-holder {
+	padding-bottom: 20px;
+}

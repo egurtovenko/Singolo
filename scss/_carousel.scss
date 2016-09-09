@@ -1,3 +1,6 @@
+.carousel-off {
+	display: none;
+}
 .carousel {
 	.carousel-control {
 		&.left {
@@ -5,6 +8,21 @@
 		}
 		&.right {
 		background-image: none;
+		}
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.carousel {
+		display: none;
+	}
+	.carousel-off {
+		display: block;
+		font-weight: 700;
+		.carousel-title {
+			font-weight: 700;
+			font-family: 'Lato';
+			color: #f2f2f2;
 		}
 	}
 }

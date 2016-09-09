@@ -14,10 +14,9 @@ $thumb-margin-bottom: 30px;
 
 @media screen and (max-width: 768px) {
 	.card-holder {
-		&:hover {
-			.overlay {
-				visibility: hidden;
-			}
+		img {
+			width: 100%;
+			height: auto;
 		}
 	}
 }
