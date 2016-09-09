@@ -5053,3 +5053,12 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
     text-align: center;
   }
 }
+
+.img-thumbnail {
+  background-color: #666d89;
+  border: 1px solid #666d89;
+}
+
+.pb {
+  padding-bottom: 30px;
+}

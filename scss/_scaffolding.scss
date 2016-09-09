@@ -1,0 +1,11 @@
+$thumb-bg: #666d89;
+$thumb-border-color: $thumb-bg;
+$thumb-padding-bottom: 30px;
+
+.img-thumbnail {
+	background-color: $thumb-bg;
+	border: 1px solid $thumb-border-color;
+}
+.pb {
+	padding-bottom: $thumb-padding-bottom;
+}
