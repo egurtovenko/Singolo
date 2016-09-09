@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*!
  * Bootstrap v3.3.7 (http://getbootstrap.com)
  * Copyright 2011-2016 Twitter, Inc.
@@ -1474,7 +1475,7 @@ hr {
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
   font-family: inherit;
-  font-weight: 700;
+  font-weight: 300;
   line-height: 1.1;
   color: inherit;
 }
@@ -1956,7 +1957,7 @@ pre code {
 
 @media (min-width: 1200px) {
   .container {
-    width: 1170px;
+    width: 1050px;
   }
 }
 
@@ -4838,5 +4839,217 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
 @media print {
   .hidden-print {
     display: none !important;
+  }
+}
+
+.block {
+  display: block;
+  padding: 60px 0;
+  border-bottom: 5px solid #fff;
+}
+
+.block-red {
+  background: #eb5055;
+  border-bottom: 5px solid #ea676b;
+}
+
+.block-dark {
+  background: #303441;
+  border-bottom: 5px solid #373b4a;
+}
+
+@media screen and (max-width: 768px) {
+  .block {
+    padding: 25px 0;
+  }
+  .block-red {
+    border-bottom: 2px solid #ea676b;
+  }
+  .block-dark {
+    border-bottom: 2px solid #373b4a;
+  }
+}
+
+.heading {
+  margin-bottom: 40px;
+}
+
+.heading-title {
+  font-weight: 700;
+  margin-top: 0;
+}
+
+.heading-description {
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: 'icomoon';
+  src: url("../fonts/icomoon.eot?sj4liy");
+  src: url("../fonts/icomoon.eot?sj4liy#iefix") format("embedded-opentype"), url("../fonts/icomoon.ttf?sj4liy") format("truetype"), url("../fonts/icomoon.woff?sj4liy") format("woff"), url("../fonts/icomoon.svg?sj4liy#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  font-size: 40px;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-bubble:before {
+  content: "";
+  left: 5%;
+  top: 12%;
+  position: absolute;
+}
+
+.icon-heart:before {
+  content: "";
+  left: 4%;
+  top: 12%;
+  position: absolute;
+}
+
+.icon-lamp:before {
+  content: "";
+  left: 7%;
+  top: 12%;
+  position: absolute;
+}
+
+.icon-pen:before {
+  content: "";
+  left: 5%;
+  top: 12%;
+  position: absolute;
+}
+
+.icon-phone:before {
+  content: "";
+  left: 7%;
+  top: 12%;
+  position: absolute;
+}
+
+.icon-star:before {
+  content: "";
+  left: 4%;
+  top: 12%;
+  position: absolute;
+}
+
+.icon-phone2:before {
+  content: "";
+}
+
+.icon-mail:before {
+  content: "";
+}
+
+.icon-location:before {
+  content: "";
+}
+
+.icon-google-plus:before {
+  content: "";
+}
+
+.icon-facebook:before {
+  content: "";
+}
+
+.icon-twitter:before {
+  content: "";
+}
+
+.icon-linkedin:before {
+  content: "";
+}
+
+.carousel .carousel-control.left {
+  background-image: none;
+}
+
+.carousel .carousel-control.right {
+  background-image: none;
+}
+
+.features {
+  padding-left: 100px;
+  padding-bottom: 25px;
+  position: relative;
+}
+
+.features:after {
+  content: '';
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  border: 2px solid #767e9e;
+  left: 0;
+  top: 0;
+  position: absolute;
+}
+
+.features-title {
+  font-weight: 700;
+  margin-top: 0;
+}
+
+.features-description {
+  font-weight: 400;
+  font-size: 12px;
+}
+
+.navbar-default {
+  border-bottom: 5px solid #373b4a;
+}
+
+.navbar-default li {
+  position: relative;
+}
+
+.navbar-default li:after {
+  content: '';
+  position: absolute;
+  width: 2px;
+  height: 2px;
+  background: #494e62;
+  left: 100%;
+  top: 50%;
+}
+
+.navbar-default li:last-child:after {
+  display: none;
+}
+
+.navbar-default li > a {
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.navbar-default .navbar-toggle:hover {
+  border-color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+  .navbar-default {
+    border-bottom: 2px solid #373b4a;
+  }
+  .navbar-default li:after {
+    display: none;
+  }
+  .navbar-default li > a {
+    text-align: center;
   }
 }

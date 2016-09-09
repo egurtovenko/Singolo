@@ -3,6 +3,7 @@ $dark-bg: #303441;
 .block {
 	display: block;
 	padding: 60px 0;
+	border-bottom: 5px solid #fff;
 	&-red {
 		background: $brand-primary;
 		border-bottom: 5px solid #ea676b;
