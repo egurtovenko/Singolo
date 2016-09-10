@@ -4883,6 +4883,10 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
   font-weight: 300;
 }
 
+.heading-inverse {
+  color: #f0d8d9;
+}
+
 @font-face {
   font-family: 'icomoon';
   src: url("../fonts/icomoon.eot?sj4liy");
