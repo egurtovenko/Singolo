@@ -14,6 +14,13 @@ $btn-default-bg-hover:				transparent;
 $btn-default-border-hover:			#fff;
 $text-hover-color:					#fff;
 
+$font-size-lg: 						$btn-font-size;
+$padding-lg-y:						5px;
+$padding-lg-x:						25px;
+
+$btn-text-inverse:					#f0d8d9;
+$btn-border-inverse:				$btn-text-inverse;
+
 
 
 @mixin btn-variant ($background, $color, $border, $hover-color, $border-hover, $text-hover){
@@ -52,11 +59,17 @@ $text-hover-color:					#fff;
 .btn-default {
 	@include btn-variant ($btn-default-bg, $btn-text-default, $btn-border-default, $btn-default-bg-hover, $btn-default-border-hover, $text-hover-color);
 }
+.btn-inverse {
+	@include btn-variant ($btn-default-bg, $btn-text-inverse, $btn-border-inverse, $btn-default-bg-hover, $btn-default-border-hover, $text-hover-color);
+}
 
 //Buttons size 
 
 .btn-small {
 	@include btn-size ($btn-border-radius, $font-size-small, $padding-small-y, $padding-small-x);
+}
+.btn-lg {
+	@include btn-size ($btn-border-radius, $font-size-lg, $padding-lg-y, $padding-lg-x);
 }
 
 .btn-holder {

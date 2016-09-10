@@ -4904,7 +4904,6 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
   font-variant: normal;
   text-transform: none;
   line-height: 1;
-  font-size: 25px;
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -5008,6 +5007,8 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
 
 .features-ico .icon {
   margin: auto;
+  font-size: 25px;
+  font-weight: 500;
 }
 
 .features-holder-title {
@@ -5078,6 +5079,11 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
   visibility: hidden;
 }
 
+.form-control {
+  font-size: 12px;
+  resize: none;
+}
+
 .card-holder {
   margin-bottom: 30px;
   position: relative;
@@ -5122,10 +5128,28 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
   color: #fff;
 }
 
+.btn-inverse {
+  background-color: transparent;
+  color: #f0d8d9;
+  border-color: #f0d8d9;
+}
+
+.btn-inverse:hover, .btn-inverse.active {
+  background: transparent;
+  border-color: #fff;
+  color: #fff;
+}
+
 .btn-small {
   border-radius: 4px;
   font-size: 12px;
   padding: 0 8px;
+}
+
+.btn-lg {
+  border-radius: 4px;
+  font-size: 12px;
+  padding: 5px 25px;
 }
 
 .btn-holder {
@@ -5163,6 +5187,74 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
 }
 
 .team-social .circle {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 10px;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #767e9e;
+  border-radius: 50%;
+  position: relative;
+}
+
+@media screen and (max-width: 768px) {
+  .team-social {
+    margin-bottom: 15px;
+  }
+}
+
+.contacts {
+  color: #f0d8d9;
+}
+
+.contacts-title {
+  font-weight: 700;
+  margin-top: 0;
+}
+
+.contacts-description {
+  font-size: 12px;
+  display: block;
+  padding-bottom: 30px;
+}
+
+.contacts-info {
+  font-size: 12px;
+}
+
+.contacts-info .icon {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.contacts-info .icon > span {
+  padding-left: 10px;
+  font-family: 'Lato';
+}
+
+@media screen and (max-width: 768px) {
+  .contacts {
+    padding-top: 15px;
+  }
+}
+
+.footer-social .social-link {
+  color: #767e9e;
+  display: inline-block;
+  text-align: center;
+}
+
+.footer-social .social-link:hover {
+  color: #eb5055;
+}
+
+.footer-social .icon {
+  font-size: 16px;
+  margin: auto;
+}
+
+.footer-social .circle {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;

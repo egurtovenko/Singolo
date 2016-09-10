@@ -1,0 +1,29 @@
+.contacts {
+	color: #f0d8d9;
+	&-title {
+		font-weight: 700;
+		margin-top: 0;
+	}
+	&-description {
+		font-size: $font-size-small;
+		display: block;
+		padding-bottom: 30px;
+	}
+	&-info {
+		font-size: $font-size-small;
+		.icon {
+			display: block;
+			margin-bottom: 10px;
+			> span {
+				padding-left: 10px;
+				font-family: 'Lato';
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.contacts {
+		padding-top: 15px;
+	}
+}

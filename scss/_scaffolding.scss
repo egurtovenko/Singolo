@@ -16,15 +16,8 @@ $thumb-border-color: $thumb-bg;
 	opacity: 0.9;
 	z-index: 10;
 	visibility: hidden;
-		// &:before {
-		// 	content: 'VIEW';
-		// 	position: absolute;
-		// 	font-size: 14px;
-		// 	font-weight: 700;
-		// 	color: $thumb-bg;
-		// 	left: 50%;
-		// 	top: 50%;
-		// 	transform: translateY(-35%);
-		// 	visibility: hidden;
-		// }
+}
+.form-control {
+	font-size: 12px;
+	resize: none;
 }
